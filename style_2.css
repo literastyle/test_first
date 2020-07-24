@@ -1,67 +1,75 @@
 body{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  background:transparent;
+  font-family: arial;
+  box-sizing: border-box;
+  }
+  .card-container{
+  width: 300px;
+  height: 430px;
+  background: #FFF;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+  }
+  .upper-container{
+  height: 150px;
+  background: #18bfef;
+  }
+  .image-container{
+  background: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(100px,100px);
+  }
+  .image-container img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  }
+  .lower-container{
+  height: 280px;
+  background: #FFF;
+  padding: 20px;
+  padding-top: 40px;
   text-align: center;
-  background:transparent
-  font-family: sans-serif;
-
-}
-
-.contact-title
-
-{
-margin-top:  100px;
-color: white;
-text-transform: uppercase;
-transition:all 4s ease-in-out;
-} 
-.contact-title h1{
-  font-size: 32px;
-  line-height: 10px;
-
-}
-.contact-title h2
-{
-  font-size: 16 px;
-}
-
-form
-{ 
-  margin-top: 50px;
-  transition:all 4s ease-in-out;
-}
-
-.form-control
-{  
-  windth 600px;
-  background: transparent;
-  border: 3px;
-  outline: 3px;
-  border-bottom: 2px solid gray ;
-  color:#ffff
-  font-size: 15px
-  margin-bottom: 16px
-
-}
-
-input
-{
-  height: 45px;
-}
-
-form .sumbit
-{
-  background: #ff5722;
-  border-color: transparent;
-  color: #fff;
-  font-size: 15px;
+  }
+  .lower-container h3, h4{
+  box-sizing: border-box;
+  line-height: .6;
+  font-weight: lighter;
+  }
+  .lower-container h4{
+  color: #18bfef;
+  opacity: .6;
   font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-}
-
-form .sumbit:hover
-{
-  backround-color: #f44336;¨
-  cursor: pointer;
+  }
+  .lower-container p{
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 30px;
+  }
+  .lower-container .btn{
+  padding: 12px 20px;
+  background: #7F00FF;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .3s ease-in;
+  }
+  .lower-container .btn:hover{
+  background: transparent;
+  color: #7F00FF;
+  border: 2px solid #7F00FF;
+  }
