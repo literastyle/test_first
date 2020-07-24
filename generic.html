@@ -34,8 +34,61 @@
 				<!-- Main -->
 					<div id="main">
 					<h1>TEAM</h1>
-						<div class="main"><span class="image fit"><img src="images/cards.png" alt="" /></span></div>
-					
+					<head>
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+						<style>
+						.container {
+						  position: relative;
+						  width: 50%;
+						}
+						
+						.image {
+						  opacity: 1;
+						  display: block;
+						  width: 100%;
+						  height: auto;
+						  transition: .5s ease;
+						  backface-visibility: hidden;
+						}
+						
+						.middle {
+						  transition: .5s ease;
+						  opacity: 0;
+						  position: absolute;
+						  top: 50%;
+						  left: 50%;
+						  transform: translate(-50%, -50%);
+						  -ms-transform: translate(-50%, -50%);
+						  text-align: center;
+						}
+						
+						.container:hover .image {
+						  opacity: 0.3;
+						}
+						
+						.container:hover .middle {
+						  opacity: 1;
+						}
+						
+						.text {
+						  background-color: #4CAF50;
+						  color: white;
+						  font-size: 16px;
+						  padding: 16px 32px;
+						}
+						</style>
+						</head>
+						<body>
+						
+						
+						<div class="container">
+						  <img src="images/cards.png" alt="Avatar" class="image" style="width:243%">
+						  <div class="middle">
+							<div class="text">John Doe</div>
+						  </div>
+						</div>
+						  
+						</body>
 
 				<!-- Copyright -->
 					<div id="copyright">
